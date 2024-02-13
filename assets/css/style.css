@@ -13,9 +13,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/template.png") top right no-repeat;
+  background: #040404 url("../img/WhatsApp\ Image\ 2023-05-24\ at\ 13.05.36\ \(83\).jpeg") top right no-repeat;
   background-size:cover;
-
+  background-position-x: center;
   left: 0;
   right: 0;
   top: 0;
@@ -27,6 +27,13 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
+    background-size:cover;
+    background: #040404 url("../img/template.png") top right no-repeat;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
   }
 }
 
@@ -124,16 +131,20 @@ h6 {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 300px;
+   
   }
 
   #header h2 {
     font-size: 20px;
     line-height: 30px;
+  
   }
 
   #header .social-links {
-    margin-top: 15px;
+    margin-top: 0px;
   }
 
   #header .container {
