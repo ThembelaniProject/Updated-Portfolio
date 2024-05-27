@@ -106,23 +106,22 @@ h6 {
   margin: 0;
 }
 
-#header .social-links {
+#header .social-menu {
   margin-top: 40px;
   display: flex;
 }
 
-#header .social-links a {
+#header .social-menu a {
   font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  
   line-height: 1;
-  margin-right: 8px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  margin-right: 10px;
+  border-radius: 40%;
+  width: 49px;
+  height: 49px;
 }
 
 #header .social-links a:hover {
@@ -143,7 +142,7 @@ h6 {
   
   }
 
-  #header .social-links {
+  #header .social-menu {
     margin-top: 0px;
   }
 
@@ -164,7 +163,7 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links,
+#header.header-top .social-menu,
 #header.header-top h2 {
   display: none;
 }
@@ -305,6 +304,7 @@ color:green ;
   .navbar ul {
     display: none;
   }
+ 
 }
 
 .navbar-mobile {
@@ -544,7 +544,7 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 
-.interests .icon-box i {
+.interests .icon-box i{
   font-size: 32px;
   padding-right: 10px;
   line-height: 1;
@@ -562,6 +562,8 @@ section .container {
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1049,12 +1051,12 @@ section .container {
   margin: 0 0 0 68px;
 }
 
-.contact .info-box .social-links {
+.contact .info-box .social-menu {
   margin: 5px 0 0 68px;
   display: flex;
 }
 
-.contact .info-box .social-links a {
+.contact .info-box .social-menu a {
   font-size: 18px;
   display: inline-block;
   color: #fff;
@@ -1202,4 +1204,60 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+/*------Social Links-------*/
+#social-menu{
+  background: #d8d8d8;
+}
+
+.social-menu ul{
+  position: relative;
+  
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .bi{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .bi:hover{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #0077b5;
 }
