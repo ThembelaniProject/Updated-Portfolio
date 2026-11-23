@@ -26,7 +26,6 @@ body::before {
 
 @media (min-width: 1024px) {
   body::before {
-    background-attachment: fixed;
     background-size:cover;
     background: #040404 url("../img/template.png") top right no-repeat;
     left: 0;
@@ -1260,4 +1259,27 @@ section .container {
 }
 .social-menu ul li:nth-child(4) a:hover{
   background-color: #0077b5;
+}
+
+/* Performance: keep below-the-fold sections from doing unnecessary layout/paint work. */
+@supports (content-visibility: auto) {
+  #about,
+  #resume,
+  #portfolio,
+  #contact {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+}
+
+/* Respect reduced-motion preferences and avoid expensive transitions when requested. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
